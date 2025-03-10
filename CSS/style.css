@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    font-family: impact, Charcoal, sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/* 시계 스타일링 */
+#clock {
+    font-size: 5rem;
+    margin: 30px 0;
+    text-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 로그인 폼 스타일링 */
+#login-form {
+    margin-bottom: 30px;
+}
+
+#login-form input[type="text"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#login-form input[type="submit"],
+#todo-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form input[type="submit"]:hover,
+#todo-form input[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* 인사말 스타일링 */
+#greeting {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* TODO 폼 및 리스트 스타일링 */
+#todo-form {
+    margin-bottom: 20px;
+}
+
+#todo-form input {
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    color: #333;
+}
+
+#todo-list button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 5px;
+}
+
+/* 인용구 스타일링 */
+#quote {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 기존 hidden 클래스 유지 */
+.hidden {
+    display: none;
+}
